@@ -16,19 +16,19 @@ function Contadores () {
                     const idUsuarioLocal = usuarioObjeto[0];
     
                     const info = await fetch(API_URL + `server/todoparadise/pendientes/usuario/${idUsuarioLocal}`)
-                        .then(response => response.json())
-                        .then(info => {
-                            if (info.success) {
-                                setDataTag(info.data);
-                                const initialState = {};
-                                info.data.forEach((item) => {
-                                    initialState[item._id] = item.estado;
-                                });
-                                setEstadoFront(initialState);
-                            } else {
-                                console.error('La respuesta de la API no es un array:', info.message);
-                            }
-                        });
+                    .then(response => response.json())
+                    .then(info => {
+                        if (info.success) {
+                            setDataTag(info.data);
+                            const initialState = {};
+                            info.data.forEach((item) => {
+                                initialState[item._id] = item.estado;
+                            });
+                            setEstadoFront(initialState);
+                        } else {
+                            console.error('La respuesta de la API no es un array:', info.message);
+                        }
+                    });
                 }
             } catch (err) {
                 console.log(err);
