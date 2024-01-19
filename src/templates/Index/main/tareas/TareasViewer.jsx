@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Contador from "../contadores/card/Contador";
 import { Divider } from "@tremor/react";
 import Tarea from "./card/Tarea";
 import DinamicBar from "../dinamicBar/DinamicBar";

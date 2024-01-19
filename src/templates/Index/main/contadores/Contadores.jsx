@@ -1,5 +1,6 @@
 import Contador from "./card/Contador";
 import { useEffect, useState } from "react";
+import Dona from "./chart/Dona";
 
 function Contadores () {
 
@@ -55,10 +56,15 @@ function Contadores () {
     const contadorPendientes = tareasPendientes.length;
   
     return(
-        <div className="grid grid-cols-3 gap-4 my-3 px-4">
-            <Contador titulo={"Tareas registradas actualmente"} cifra={contadorRegistradas} />
-            <Contador titulo={"Tareas completadas"} cifra={contadorCompletadas} />
-            <Contador titulo={"Tareas pendientes"} cifra={contadorPendientes} />
+        <div className="grid grid-cols-2 gap-4 my-3 px-4">
+            <div className="grid grid-rows-1">
+                <Dona contadorPendientes={contadorPendientes} contadorCompletadas={contadorCompletadas}/>
+            </div>
+            <div className="grid grid-rows-3 gap-4">
+                <Contador titulo={"Tareas registradas actualmente"} cifra={contadorRegistradas} />
+                <Contador titulo={"Tareas completadas"} cifra={contadorCompletadas} />
+                <Contador titulo={"Tareas pendientes"} cifra={contadorPendientes} />
+            </div>
         </div>
     )
 }
