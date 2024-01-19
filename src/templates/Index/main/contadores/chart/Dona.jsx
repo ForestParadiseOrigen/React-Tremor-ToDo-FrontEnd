@@ -10,15 +10,15 @@ function Dona ({contadorPendientes, contadorCompletadas}) {
         labels: ['Incompletas', 'Completadas'],
         datasets: [
             {
-            label: 'Contador de tareas',
+            label: 'Cantidad',
             data: [contadorPendientes, contadorCompletadas],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)'
+                '#C0C0C0', // gray
+                '#a855f7' // purple
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)'
+                '#999999', // stale
+                '#8b5cf6' // violet
             ],
             borderWidth: 1,
             },

@@ -74,10 +74,8 @@ function TareasViewer () {
                 <Contadores />
                 
                 <DinamicBar inputBuscarTareaHandle={inputBuscarTareaHandle}/>
-                
-                <Divider>Tareas</Divider>
 
-                <div className="grid grid-cols-2 gap-4 mb-4 my-2.5 max-h-72 overflow-auto">
+                <div className="grid grid-cols-2 gap-4 px-5 pt-5 my-5 max-h-72 overflow-auto">
                     {cartasFiltradas.length > 0 ? (
                         cartasFiltradas.map((info, index) => (
                             <Tarea key={index} info={info} handleDelete={handleDelete}/>
