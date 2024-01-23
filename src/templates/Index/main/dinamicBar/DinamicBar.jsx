@@ -13,8 +13,8 @@ function DinamicBar({inputBuscarTareaHandle}) {
   return (
     <>
       <article className="flex flex-col text-start justify-center px-5 mt-5 pt-2.5">
-          {modo === 'buscar' && <h1 className="text-3xl font-bold">Buscador</h1>}
-          {modo === 'crearTarea' && <h1 className="text-3xl font-bold">Crear tarea</h1>}
+          {modo === 'buscar' && <h1 className="text-2xl font-bold">Buscador</h1>}
+          {modo === 'crearTarea' && <h1 className="text-2xl font-bold">Crear tarea</h1>}
       </article>
       <div className="flex items-center justify-center px-5 mt-2.5">
         {modo === 'buscar' && <TextInput icon={SearchIcon} placeholder="Buscar..." onChange={inputBuscarTareaHandle}/>}

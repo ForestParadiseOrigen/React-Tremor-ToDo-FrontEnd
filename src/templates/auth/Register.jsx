@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Text, TextInput, Button } from "@tremor/react";
+import { useNavigate } from "react-router-dom";
 
 function Register () {
+    const navigate = useNavigate()
     const API_URL="http://localhost:5000/";
 
     const [estadoFront, setEstadoFront] = useState({});
@@ -114,12 +116,15 @@ function Register () {
             .then((result) => {
               console.log(result);
             });
+
         } catch (err) {
-          console.log("Error en la solicitud fetch:", err);
+            console.log("Error en la solicitud fetch:", err);
         }
-    
+        
         // Esto recarga la pagina, esta al final para que termine de regsitrar el pendiente.
+        navigate('/ingreso');
         location.reload()
+
     };
 
     return(

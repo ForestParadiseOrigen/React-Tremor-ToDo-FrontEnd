@@ -3,7 +3,7 @@ import Main from "./main/Main";
 
 function Index () {
     return(
-        <>
+        <>                
             <Sidebar/>
             <Main/>
         </>

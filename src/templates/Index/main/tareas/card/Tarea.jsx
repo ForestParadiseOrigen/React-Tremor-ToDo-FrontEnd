@@ -85,7 +85,7 @@ function Tarea ({ info }) {
     };
 
     return(
-        <div className="flex items-center justify-center rounded bg-violet-50 p-2 dark:bg-gray-800 group shadow-sm">
+        <div className="flex items-center justify-center rounded-lg p-2 group border bg-white ">
             <div className="text-cente border-e border-violet-200 pe-2 me-2">
                 <Button
                     size="xs"

@@ -4,6 +4,8 @@ import { Doughnut } from 'react-chartjs-2';
 
 function Dona ({contadorPendientes, contadorCompletadas}) {
 
+    // bg-gradient-to-r from-purple-700 via-violet-700 to-violet-500
+
     ChartJS.register(ArcElement, Tooltip, Legend);
 
     const data = {
@@ -14,18 +16,18 @@ function Dona ({contadorPendientes, contadorCompletadas}) {
             data: [contadorPendientes, contadorCompletadas],
             backgroundColor: [
                 '#C0C0C0', // gray
-                '#a855f7' // purple
+                '#7c3aed' // violet
             ],
             borderColor: [
                 '#999999', // stale
-                '#8b5cf6' // violet
+                '#7c3aed' // violet
             ],
             borderWidth: 1,
             },
         ],
     };
 
-    return <Doughnut data={data} />;
+    return <Doughnut className='h-full' data={data} />;
   }
 
 export default Dona;

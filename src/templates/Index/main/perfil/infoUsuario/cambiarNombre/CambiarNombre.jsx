@@ -83,7 +83,7 @@ function CambiarNombre () {
     return(
         <>
             <article className="flex flex-col text-start justify-center mb-5 border-b pb-5">
-                <h1 className="text-3xl font-bold">Cambio de nombre</h1>
+                <h1 className="text-2xl font-bold">Cambio de nombre</h1>
                 <Text className="text-base">Aquí puedes revisar y actualizar tu nombre y correo electrónico cuando quieras.</Text>
             </article>
 

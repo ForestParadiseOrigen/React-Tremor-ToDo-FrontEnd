@@ -9,7 +9,7 @@ import PomodoroViewer from "./pomodoros/PomodoroViewer";
 
 function Main () {
     return(
-        <main className=" sm:ml-64">
+        <main className="sm:ml-64">
             <Header />
             <TareasViewer />
             <PomodoroViewer />

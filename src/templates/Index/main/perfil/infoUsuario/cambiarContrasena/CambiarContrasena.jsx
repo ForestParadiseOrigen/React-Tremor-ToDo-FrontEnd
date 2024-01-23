@@ -122,7 +122,7 @@ function CambiarContrasena () {
     return(
         <>
             <article className="flex flex-col text-start justify-center mb-5 border-b py-5">
-                <h1 className="text-3xl font-bold">Cambio de contraseña</h1>
+                <h1 className="text-2xl font-bold">Cambio de contraseña</h1>
                 <Text className="text-base">Aquí puedes revisar y actualizar tu contraseña cuando quieras.</Text>
             </article>
             <form onSubmit={validacionPasswordHandle} className="flex flex-col gap-5 justify-start" >

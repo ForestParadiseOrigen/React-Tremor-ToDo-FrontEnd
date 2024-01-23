@@ -14,12 +14,12 @@ function Sidebar () {
     return(
         <aside id="separator-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             <div className="h-full px-5 overflow-y-auto bg-white dark:bg-gray-800 border-e-2">
-                <a href="https://flowbite.com" className="my-3 py-2 px-5 rounded-lg flex items-center justify-center text-violet-900 border-2 border-dashed border-violet-900 dark:border-gray-700">
+                <a href="/" className="my-3 py-2 px-5 rounded-lg flex items-center justify-center text-violet-900 border-2 border-dashed border-violet-900 dark:border-gray-700">
                     <span className="flex-1 self-center text-2xl font-bold whitespace-nowrap dark:text-white ms-2">To-Do</span>
                 </a>
                 <ul className="space-y-2 font-medium border-y-2 py-3">
                     <li>
-                        <a href="#Contador" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#Contadores" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
                         </svg>
