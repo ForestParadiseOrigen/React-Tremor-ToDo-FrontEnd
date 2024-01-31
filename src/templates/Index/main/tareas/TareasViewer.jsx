@@ -8,8 +8,6 @@ function TareasViewer () {
     const API_URL="http://localhost:5000/";
     const [dataTag, setDataTag] = useState([])
 
-    // ... (resto del código)
-
     useEffect(() => {
         const refreshPendientes = async () => {          
             try {  
@@ -41,8 +39,6 @@ function TareasViewer () {
     
         refreshPendientes();
     }, []);
-
-// ... (resto del código)
 
     
     const handleDelete = (event) => {
