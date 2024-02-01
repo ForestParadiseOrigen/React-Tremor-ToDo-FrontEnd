@@ -47,7 +47,7 @@ function TareasViewer () {
     }
  
     const [inputBuscarTarea, setInputBuscarTarea] = useState({})
-    const [cartasFiltradas, setCartasFiltradas] = useState([]); // Agregamos el estado
+    const [cartasFiltradas, setCartasFiltradas] = useState([]);
 
     const inputBuscarTareaHandle = (event) => {
         const value = event.target.value;
@@ -66,7 +66,7 @@ function TareasViewer () {
     
     const tareasRegistradas = dataTag.filter(info => {
         return info.data  !== null;
-      }); 
+    }); 
     
       const contadorRegistradas = tareasRegistradas.length;
     return(
